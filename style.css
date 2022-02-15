@@ -1,0 +1,30 @@
+/* hiệu ứng phông nền (lá rơi) */
+#snowflakeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.snowflake {
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 24px;
+  position: fixed;
+  color: #00e946;
+  user-select: none;
+  z-index: 1000;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.snowflake:hover {
+  cursor: default;
+}
+
+/* ----------------------------- */
+body{
+  background-image: url(./Image/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

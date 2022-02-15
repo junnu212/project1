@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 192, 203, 0.753),
+      rgba(0, 0, 255, 0.651)
+    ),
+    url("https://images.unsplash.com/photo-1638913970961-1946e5ee65c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.616);
+  font-size: 5rem;
+}
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main: pink;
+}
+body {
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 0.7) 20%,
+    rgba(255, 192, 203, 0.7) 60%
+  );
+  background-repeat: none;
+  background-size: cover;
+}
+.box {
+  display: flex;
+}
+.main {
+  display: inline-block;
+}
+.card {
+  height: 400px;
+  width: 300px;
+  background-color: rgba(117, 17, 175, 0.3);
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  /* border: 5px solid violet; */
+  margin: 20px 65px;
+  box-shadow: 7px 10px rgb(155, 15, 155);
+}
+.card__img {
+  height: 120px;
+  width: 120px;
+  border: 4px solid var(--main);
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--main);
+  margin: 20px;
+  transition: 1s;
+}
+p,
+h2 {
+  color: white;
+  font-size: 2rem;
+  cursor: context-menu;
+  text-shadow: 2px 2px violet;
+}
+button {
+  cursor: pointer;
+}
+.card__icon {
+  color: white;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.card__icon i {
+  margin: 10px 10px;
+  cursor: pointer;
+}
+button {
+  height: 40px;
+  width: 150px;
+  background-color: transparent;
+  border: 1px solid var(--main);
+  border-radius: 10px;
+  color: var(--main);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.card__img:hover {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: unset;
+  background-color: transparent;
+  margin: 0;
+}
+button:hover {
+  color: var(--main);
+  background-color: white;
+}
+.card__icon i:hover {
+  color: var(--main);
+}
